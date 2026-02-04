@@ -1,14 +1,6 @@
 # NexusEdu
 Entorno Virtual
 
-
-
-Este es un desafío ambicioso. Tu proyecto **NexusEdu** tiene una estructura de nivel profesional, combinando la elegancia del frontend que ya diseñaste con una arquitectura de backend robusta en **C# y SQL Server**.
-
-A continuación, te presento una estructura de **README.md** optimizada, con secciones colapsables para que sea fácil de navegar y visualmente impactante.
-
----
-
 # 🎓 NexusEdu - Sistema de Gestión Académica Inteligente
 
 **NexusEdu** es un ecosistema virtual diseñado para centralizar la vida académica universitaria. Bajo una arquitectura de **N-Capas** y un modelo **Cliente-Servidor**, permite a los estudiantes gestionar su progreso, visualizar métricas de rendimiento y acceder a recursos de IA en una interfaz moderna y eficiente.
