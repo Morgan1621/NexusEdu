@@ -1,5 +1,5 @@
 # NexusEdu
-Entorno Virtual
+Portal Estudiantil
 
 # 🎓 NexusEdu - Sistema de Gestión Académica Inteligente
 
