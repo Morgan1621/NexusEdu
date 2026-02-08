@@ -1,0 +1,113 @@
+/* Reset básico para que todo se vea igual en cualquier navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000; /* Fondo negro puro como en la imagen */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-container {
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+/* La tarjeta gris oscuro */
+.login-card {
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: left;
+}
+
+.login-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-instruction {
+    color: #888;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    background-color: #050505;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 12px;
+    color: white;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #6a1b9a; /* Color morado UdeM al hacer click */
+}
+
+.input-group small {
+    display: block;
+    color: #666;
+    margin-top: 8px;
+    font-size: 0.75rem;
+}
+/* El botón gris de la imagen */
+.btn-ingresar {
+    width: 100%;
+    padding: 12px;
+    background-color: #808080;
+    border: none;
+    border-radius: 5px;
+    color: #1a1a1a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-ingresar:hover {
+    background-color: #a0a0a0;
+}
+
+.disclaimer {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #555;
+}
