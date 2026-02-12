@@ -1,5 +1,5 @@
 const form = document.querySelector("form");
-const carnetInput = document.getElementById("carnet");
+const carnetInput = document.getElementById("carnetInput");
 const passwordInput = document.getElementById("password");
 const btn = document.querySelector(".btn-ingresar");
 
@@ -46,6 +46,6 @@ form.addEventListener("submit", async (e) => {
     alert("No se pudo conectar con el servidor.");
   } finally {
     btn.innerText = "Ingresar";
-    validarCampos(); // vuelve al color correcto
+    validarCampos();
   }
 });
