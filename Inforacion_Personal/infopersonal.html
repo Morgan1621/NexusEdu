@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Estudiantil-UdeM</title>
+    <link rel="stylesheet" href="infopersonal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+      <div class="navbar-left">
+       <div class="logo">
+            <img src="https://www.udem.edu.ni/EntornoVirtual/img/udem.png" alt="Logo UdeM">
+        </div>
+       <span class="platform-name">Entorno Virtual UdeM</span>
+        </div>
+        <div class="navbar-right">
+             <button id="theme-toggle" class="theme-btn">🌙</button>
+             <button class="logout-btn">Cerrar Sesión</button>
+        </div>
+    </nav>
+
+  <!-- Contenido principal -->
+  <main class="container">
+
+  <section class="card main-card">
+    <h1>JOSUE ISRAEL ENRIQUEZ MAYRENA</h1>
+    <p>Carnet: <b>211465</b> | Carrera: <b>INGENIERIA EN SISTEMAS</b></p>
+  </section>
+
+  <nav class="tabs">
+  <button class="tab active">
+    <i class="fa-solid fa-user"></i>
+    Información Personal
+  </button>
+
+  <button class="tab">
+    <i class="fa-solid fa-book"></i>
+    Clases Actuales
+  </button>
+
+  <button class="tab">
+    <i class="fa-solid fa-graduation-cap"></i>
+    Calificaciones
+  </button>
+
+  <button class="tab">
+    <i class="fa-solid fa-chart-pie"></i>
+    Auditoría
+  </button>
+</nav>
+
+
+
+  <h2>Información Personal</h2>
+  <p class="subtitle">Resumen detallado de tu perfil estudiantil.</p>
+
+  <!-- DATOS PERSONALES -->
+  <section class="card">
+    <h3>👤 DATOS PERSONALES</h3>
+    <div class="grid">
+      <div>
+        <span>NOMBRE</span>
+        <p>JOSUE ISRAEL ENRIQUEZ MAYRENA</p>
+      </div>
+      <div>
+        <span>CARNET</span>
+        <p>211465</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFORMACIÓN DE CONTACTO -->
+  <section class="card">
+    <h3>@ INFORMACIÓN DE CONTACTO</h3>
+    <div class="grid">
+      <div>
+        <span>CORREO INSTITUCIONAL</span>
+        <p>
+          josue.enriquez211465@udem.edu.ni
+          <span class="badge">VERIFICADO</span>
+        </p>
+        <span>CONTRASEÑA DE CORREO</span>
+        <p>Est!211465</p>
+      </div>
+
+      <div>
+        <span>CORREO PERSONAL</span>
+        <p>josueisrael1122@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETALLES ACADÉMICOS -->
+  <section class="card">
+    <h3>📘 DETALLES ACADÉMICOS</h3>
+    <div class="grid">
+      <div>
+        <span>CARRERA</span>
+        <p>INGENIERIA EN SISTEMAS</p>
+      </div>
+      <div>
+        <span>TURNO</span>
+        <p>MATUTINO</p>
+      </div>
+    </div>
+  </section>
+
+  <footer> 
+    <p>Esta app no tiene relación con la Universidad de Managua</p> 
+</footer>
+
+</main>
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-theme');
+      body.classList.toggle('light-theme');
+      toggleBtn.textContent = body.classList.contains('dark-theme') ? '🌙' : '☀️';
+    });
+  </script>
+</body>
+</html>

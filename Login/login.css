@@ -1,4 +1,4 @@
-/* Reset básico para que todo se vea igual en cualquier navegador */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #000000; /* Fondo negro puro como en la imagen */
+    background-color: #000000; /* Fondo negro  */
     color: white;
     display: flex;
     justify-content: center;

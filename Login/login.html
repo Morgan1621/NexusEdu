@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login UdeM - Entorno Virtual</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="main-container">
         <div class="logo-container">
-            <img src="https://udem.edu.ni/wp-content/uploads/2021/07/Logo-UdeM-2021.png" alt="Logo UdeM" class="logo">
+            <img src="https://www.udem.edu.ni/EntornoVirtual/img/udem.png" alt="Logo UdeM" class="logo">
         </div>
 
-        <h1>Entorno Virtual UdeM</h1>
+        <h1>Portal Estudiantil UdeM</h1>
         <p class="subtitle">Ingresa tus credenciales para ver tu información académica</p>
 
         <div class="login-card">
@@ -22,7 +22,7 @@
             <form>
                 <div class="input-group">
                     <label for="carnet">Carnet</label>
-                    <input type="text" id="carnet" placeholder="Ej: 221085">
+                    <input type="text" id="carnetInput" placeholder="Ej: 221085">
                 </div>
 
                 <div class="input-group">
@@ -31,7 +31,7 @@
                     <small>Si no ingresas contraseña, se usará "12345" por defecto</small>
                 </div>
 
-                <button type="submit" class="btn-ingresar">Ingresar</button>
+                <button id="btnIngresar" disabled>Ingresar</button>
             </form>
         </div>
 
@@ -39,5 +39,10 @@
             Esta app no tiene relación con la Universidad de Managua
         </footer>
     </div>
-</body>
+
+
+            
+         
+
+        </body>
 </html>
