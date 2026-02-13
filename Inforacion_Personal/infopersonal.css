@@ -54,7 +54,6 @@ body.light-theme .navbar
 }
 
 
-
     
     .theme-btn 
     { background: none; 
@@ -162,10 +161,13 @@ span {
 }
 
 /* FOOTER */
-footer {
+.footer-full 
+{
+    width: 100%;
     text-align: center;
+    background-color: #1e1e1e; 
+    color: #aaa;
     color: var(--text-muted);
-    margin: 30px;
+    padding: 10px 125px;
+    margin: 10px;
 }
-
-/*esta es una prueba de comentario para ver si se sube el cambio al repositorio*/
