@@ -3,6 +3,22 @@ const carnetInput = document.getElementById("carnetInput");
 const passwordInput = document.getElementById("password");
 const btn = document.querySelector(".btn-ingresar");
 
+// Lógica para cambiar de pestaña
+const tabs = document.querySelectorAll('.tab');
+
+tabs.forEach(tab => 
+  {
+    tab.addEventListener('click', () => {
+       
+        tabs.forEach(t => t.classList.remove('active'));
+        
+        
+        tab.classList.add('active');
+
+        // Aquí podrías agregar lógica para ocultar/mostrar contenido si lo deseas
+    });
+});
+
 /* ACTIVAR / DESACTIVAR BOTÓN */
 function validarCampos() {
   if (carnetInput.value.trim() !== "" || passwordInput.value.trim() !== "") {
