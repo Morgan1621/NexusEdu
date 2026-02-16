@@ -95,29 +95,58 @@ body.light-theme .navbar
     color: var(--text-muted);
 }
 
-/* TABS */
+/* Estilo general de las pestañas */
 .tabs {
     display: flex;
-    background: var(--bg-soft);
-    border-radius: 8px;
-    overflow: hidden;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
-.tab {
-    flex: 1;
-    background: transparent;
-    border: none;
-    color: var(--text-muted);
+/* Contenedor de pestañas: ahora ocupa todo el ancho disponible */
+.tabs {
+    display: flex;
+    width: 100%; 
+    gap: 10px; /* Espacio entre botones */
+    margin-bottom: 25px;
+    background-color: #1a1a1a; /* Fondo oscuro similar a la imagen */
     padding: 10px;
+    border-radius: 12px;
+}
+
+/* Estilo base de cada pestaña */
+.tab {
+    flex: 1; /* Esto hace que todas las pestañas crezcan para llenar el ancho */
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido internamente */
+    gap: 10px;
+    transition: all 0.3s ease;
+    background-color: transparent; /* Fondo transparente por defecto */
+    color: #b0b0b0; /* Gris para las no seleccionadas */
 }
 
+/* --- ESTADO SELECCIONADO (Como pediste) --- */
 .tab.active {
-    background: var(--bg-card);
-    color: var(--text-main);
+    background-color: #555555; /* Gris claro resaltado */
+    color: #ffffff !important; /* Letras blancas */
 }
 
+/* Iconos */
+.tab i {
+    font-size: 1.1em;
+}
+
+/* Efecto hover suave para las pestañas no activas */
+.tab:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
 /* TITLES */
 .subtitle {
     color: var(--text-muted);
@@ -161,13 +190,41 @@ span {
 }
 
 /* FOOTER */
-.footer-full 
-{
-    width: 100%;
-    text-align: center;
-    background-color: #1e1e1e; 
-    color: #aaa;
-    color: var(--text-muted);
-    padding: 10px 125px;
-    margin: 10px;
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.6);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* MODO OSCURO */
+body.dark-theme .app-footer {
+  background: linear-gradient(to top, #000, #1a1a1a);
+}
+
+body.dark-theme .app-footer p {
+  color: #7b7b7b;
+}
+
+/* MODO CLARO */
+body.light-theme .app-footer {
+  background: linear-gradient(to top, #f1f1f1, #ffffff);
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+}
+
+body.light-theme .app-footer p {
+  color: #333;
+}
+
+.app-footer p {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 0.5px;
 }
