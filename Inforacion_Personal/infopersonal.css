@@ -77,13 +77,15 @@ body.light-theme .navbar
 /*Barra superior */
 
 /* MAIN */
-.container {
+.container 
+{
     max-width: 900px;
     margin: 30px auto;
 }
 
 /* PROFILE */
-.profile-card {
+.profile-card 
+{
     background: var(--bg-card);
     border: 1px solid var(--border-main);
     border-radius: 12px;
@@ -91,7 +93,8 @@ body.light-theme .navbar
     margin-bottom: 20px;
 }
 
-.profile-card p {
+.profile-card p 
+{
     color: var(--text-muted);
 }
 
@@ -103,9 +106,10 @@ body.light-theme .navbar
 }
 
 /* Contenedor de pestañas: ahora ocupa todo el ancho disponible */
-.tabs {
+.tabs
+ {
     display: flex;
-    width: 100%; 
+    width: 98%; /* aqui podes mofificar el ancho de la barra de de informacion del estudiante*/
     gap: 10px; /* Espacio entre botones */
     margin-bottom: 25px;
     background-color: #1a1a1a; /* Fondo oscuro similar a la imagen */
@@ -114,7 +118,8 @@ body.light-theme .navbar
 }
 
 /* Estilo base de cada pestaña */
-.tab {
+.tab
+{
     flex: 1; /* Esto hace que todas las pestañas crezcan para llenar el ancho */
     padding: 12px 15px;
     border: none;
@@ -131,30 +136,34 @@ body.light-theme .navbar
     color: #b0b0b0; /* Gris para las no seleccionadas */
 }
 
-/* --- ESTADO SELECCIONADO (Como pediste) --- */
-.tab.active {
+.tab.active
+{
     background-color: #555555; /* Gris claro resaltado */
     color: #ffffff !important; /* Letras blancas */
 }
 
 /* Iconos */
-.tab i {
+.tab i 
+{
     font-size: 1.1em;
 }
 
 /* Efecto hover suave para las pestañas no activas */
-.tab:hover:not(.active) {
+.tab:hover:not(.active) 
+{
     background-color: rgba(255, 255, 255, 0.05);
     color: #ffffff;
 }
 /* TITLES */
-.subtitle {
+.subtitle
+{
     color: var(--text-muted);
     margin-bottom: 20px;
 }
 
 /* CARDS */
-.card {
+.card 
+{
     background: #0f0f0f;
     border: 1px solid #3a3a3a; /* línea visible */
     border-radius: 12px;
@@ -163,25 +172,29 @@ body.light-theme .navbar
     box-shadow: 0 0 8px rgba(255,255,255,0.05); /* brillo suave */
 }
 
-body.light-theme .card {
+body.light-theme .card
+{
     background: #ffffff;
     border: 1px solid #ccc;
     box-shadow: 0 0 8px rgba(0,0,0,0.08);
 }
 
 
-.grid {
+.grid 
+{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-span {
+span 
+{
     font-size: 11px;
     color: var(--text-muted);
 }
 
-.badge {
+.badge
+{
     background: #1f8f3a;
     color: white;
     font-size: 10px;
@@ -214,17 +227,49 @@ body.dark-theme .app-footer p {
 }
 
 /* MODO CLARO */
-body.light-theme .app-footer {
+body.light-theme .app-footer 
+{
   background: linear-gradient(to top, #f1f1f1, #ffffff);
   box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
 }
 
-body.light-theme .app-footer p {
+body.light-theme .app-footer p 
+{
   color: #333;
 }
 
-.app-footer p {
+.app-footer p 
+{
   margin: 0;
   font-size: 13px;
   letter-spacing: 0.5px;
+}
+
+/* --- ADICIÓN PARA TABS EN MODO CLARO --- */
+
+
+body.light-theme .tabs
+{
+    background-color: #444444; 
+    border: 1px solid #ccc;   
+}
+
+
+body.light-theme .tab 
+{
+    color: #ffffff; 
+}
+
+
+body.light-theme .tab:hover:not(.active) 
+{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+
+body.light-theme .tab.active 
+{
+    background-color: #666666; 
+    color: #ffffff !important;
 }
