@@ -21,8 +21,8 @@
      justify-content: space-between; 
      align-items: center; 
      background-color: #1e1e1e; 
-     padding: 10px 20px;
-    border-bottom: 2px solid #333; 
+     padding: 10px 80px;
+    border-bottom: 1px solid #333; 
 } 
 body.light-theme .navbar 
 { background-color: #ffffff; 
@@ -35,7 +35,8 @@ body.light-theme .navbar
  } 
  
   /* logo */
- .logo {
+ .logo 
+{
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -47,14 +48,13 @@ body.light-theme .navbar
 }
 
 /* se ajusta sin deformar el logo */
-.logo img {
+.logo img 
+{
   width: 100%;
   height: 100%;
   object-fit: cover;    
 }
 
-
-    
     .theme-btn 
     { background: none; 
     border: none; 
@@ -66,7 +66,7 @@ body.light-theme .navbar
     { background-color: #d32f2f; 
     border: none; color: #fff; 
     padding: 8px 15px; 
-    border-radius: 5px; 
+    border-radius: px; 
     cursor: pointer; 
     font-weight: bold; 
     } 
@@ -83,38 +83,27 @@ body.light-theme .navbar
     margin: 30px auto;
 }
 
-/* PROFILE */
-.profile-card 
-{
-    background: var(--bg-card);
-    border: 1px solid var(--border-main);
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.profile-card p 
-{
-    color: var(--text-muted);
-}
-
 /* Estilo general de las pestañas */
-.tabs {
+.tabs 
+{
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
-/* Contenedor de pestañas: ahora ocupa todo el ancho disponible */
+/* Contenedor de pestañas */
 .tabs
  {
     display: flex;
-    width: 98%; /* aqui podes mofificar el ancho de la barra de de informacion del estudiante*/
-    gap: 10px; /* Espacio entre botones */
-    margin-bottom: 25px;
-    background-color: #1a1a1a; /* Fondo oscuro*/
-    padding: 10px;
+    justify-content: space-between; /* Distribuye los botones equitativamente */
+    align-items: center;
+    width: 99%; /* aqui podes mofificar el ancho de la barra de de informacion del estudiante*/
+    /*box-sizing: border-box; Alinea el el ancho de tu container*/
+   margin: 0 auto 20px auto;
+    background-color: #1a1a1a; /* Fondo oscuro  */
+    padding: 8px;
     border-radius: 12px;
+    box-sizing: border-box;
 }
 
 /* Estilo base de cada pestaña */
@@ -179,7 +168,6 @@ body.light-theme .card
     box-shadow: 0 0 8px rgba(0,0,0,0.08);
 }
 
-
 .grid 
 {
     display: grid;
@@ -191,15 +179,6 @@ span
 {
     font-size: 11px;
     color: var(--text-muted);
-}
-
-.badge
-{
-    background: #1f8f3a;
-    color: white;
-    font-size: 10px;
-    padding: 3px 8px;
-    border-radius: 10px;
 }
 
 /* FOOTER */
@@ -272,4 +251,186 @@ body.light-theme .tab.active
 {
     background-color: #666666; 
     color: #ffffff !important;
+}
+
+.dashboard 
+{
+  max-width:1200px;
+  margin:auto;
+  padding:70px;
+}
+
+.profile-card 
+{
+  background:#0b0b0b;
+  border-radius:14px; 
+  padding:25px;
+  box-shadow:0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.profile-card p 
+{
+  color:#aaa;
+}
+
+/* TABS */
+.tabs 
+{
+  margin-top:25px;
+  display:flex;
+  gap:15px;
+}
+
+.tab-btn 
+{
+  background:#1c1c1c;
+  border:none;
+  color:#999;
+  padding:10px 20px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.tab-btn.active 
+{
+  background:#666;
+  color:#fff;
+}
+
+/* CONTENT */
+.content {
+  margin-top:30px;
+}
+
+.subtitle 
+{
+  color:#aaa;
+}
+
+/* CARDS - Las clases que recibi el estudiantrw */
+.cards
+{
+  margin-top:20px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+
+.card 
+{
+  background:#0e0e0e;
+  border-radius:14px;
+  padding:20px;
+  box-shadow:0 0 15px rgba(255,255,255,0.05);
+}
+
+.card .code 
+{
+  background: #1b3c6b;
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* Modo Claro */
+body.light-theme .card .code 
+{
+    background: #004a99; 
+    color: #ffffff;
+}
+
+.card h3 
+{
+  margin:50px 0;
+}
+
+.card p 
+{
+  color:#aaa;
+  font-size:15px;
+}
+
+.card-footer 
+{
+  display:flex;
+  justify-content:space-between;
+  margin-top:15px;
+  border-top:1px solid #222;
+  padding-top:10px;
+  font-size:13px;
+}
+
+.card-footer a 
+{
+  color:#aaa;
+  text-decoration:none;
+}
+
+/* RECURSOS */
+.resources {
+  margin-top:40px;
+  background:linear-gradient(135deg,#0b1538,#050b20);
+  border-radius:16px;
+  padding:30px;
+  text-align:center;
+}
+
+.resource-buttons {
+  margin-top:15px;
+  display:flex;
+  justify-content:center;
+  gap:15px;
+}
+
+.resource-buttons a 
+{
+  background:#111;
+  border:1px solid #333;
+  padding:10px 20px;
+  border-radius:10px;
+  color:#fff;
+  text-decoration:none;
+}
+
+/* --- AJUSTES DE TEXTO PARA MODO CLARO --- */
+
+/* --- CORRECCIÓN DE RECURSOS ADICIONALES --- */
+/* Modo Claro */
+body.light-theme .resources 
+{
+    background: #6eacea; /* Fondo  */
+    border: 1px solid #345f8d;
+}
+
+body.light-theme .resources h3 {
+    color: #000000 !important; /* Título "Recursos Adicionales" en negro */
+}
+
+body.light-theme .resources p {
+    color: #444444 !important; /* Descripción en gris oscuro */
+}
+
+/* Botones dentro de recursos en Modo Claro */
+body.light-theme .resource-buttons a {
+    background: #ffffff;
+    border: 1px solid #ccd6e0;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+body.light-theme .resource-buttons a:hover {
+    background: #e2e8f0;
+    border-color: #abbbc9;
+}
+
+/* --- REFUERZO PARA EL PERFIL (NOMBRE) --- */
+/* Esto corrige que el nombre "JOSSELING..." se vea oscuro en la caja negra */
+body.light-theme .profile-card {
+    background: #ffffff !important;
+}
+
+body.light-theme .profile-card h1 {
+    color: #000000 !important;
 }

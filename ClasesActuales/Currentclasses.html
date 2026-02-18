@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Estudiantil-UdeM</title>
+    <link rel="stylesheet" href="Currentclasses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+      <div class="navbar-left">
+       <div class="logo">
+            <img src="https://www.udem.edu.ni/EntornoVirtual/img/udem.png" alt="Logo UdeM">
+        </div>
+       <span class="platform-name">Entorno Virtual UdeM</span>
+        </div>
+        <div class="navbar-right">
+             <button id="theme-toggle" class="theme-btn">🌙</button>
+             <button class="logout-btn">Cerrar Sesión</button>
+        </div>
+    </nav>
+
+<div class="dashboard">
+
+  <!-- PERFIL -->
+  <div class="profile-card">
+    <h1>JOSSELING LIZBETH GUTIERREZ MARTINEZ</h1>
+    <p>Carnet: 222402 | Carrera: INGENIERIA EN SISTEMAS</p>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button class="tab-btn">Información Personal</button>
+    <button class="tab-btn active">Clases Actuales</button>
+    <button class="tab-btn">Calificaciones</button>
+    <button class="tab-btn">Auditoría</button>
+  </div>
+
+  <!-- CONTENIDO -->
+  <section class="content">
+    <h2>Clases Actuales</h2>
+    <p class="subtitle">Matrícula I Cuatrimestre 2026</p>
+
+    <div class="cards">
+
+      <!-- CARD -->
+      <div class="card">
+        <span class="code">FI-145</span>
+        <h3>INTELIGENCIA ARTIFICIAL</h3>
+        <p><i class="fa-solid fa-door-open"></i> L02</p>
+        <p><i class="fa-regular fa-calendar"></i> DOMINGO, 11:30am</p>
+        <p><i class="fa-solid fa-users"></i> DI13B</p>
+        <div class="card-footer">
+          <span>11grfp7n</span>
+          <a href="#">Classroom ↗</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="code">FI-152</span>
+        <h3>AUDITORIA DE SISTEMAS</h3>
+        <p><i class="fa-solid fa-door-open"></i> L12</p>
+        <p><i class="fa-regular fa-calendar"></i> DOMINGO, 09:45am</p>
+        <p><i class="fa-solid fa-users"></i> DI13B</p>
+        <div class="card-footer">
+          <span>kugw32oa</span>
+          <a href="#">Classroom ↗</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="code">FI-253</span>
+        <h3>PROGRAMACION WEB API</h3>
+        <p><i class="fa-solid fa-door-open"></i> L03</p>
+        <p><i class="fa-regular fa-calendar"></i> DOMINGO, 08:00am</p>
+        <p><i class="fa-solid fa-users"></i> DI13B</p>
+        <div class="card-footer">
+          <span>j36uqd3o</span>
+          <a href="#">Classroom ↗</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="code">FI-222</span>
+        <h3>INGENIERIA WEB</h3>
+        <p><i class="fa-solid fa-door-open"></i> L03</p>
+        <p><i class="fa-regular fa-calendar"></i> DOMINGO, 01:25pm</p>
+        <p><i class="fa-solid fa-users"></i> DI13B</p>
+        <div class="card-footer">
+          <span>ri3mouqt</span>
+          <a href="#">Classroom ↗</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RECURSOS -->
+    <div class="resources">
+      <h3>Recursos Adicionales</h3>
+      <p>Accede rápidamente a las herramientas de productividad para tus estudios.</p>
+
+      <div class="resource-buttons"> <!--Este modo permite agredar iconos mas profesionales-->
+        <a href="https://classroom.google.com" class = "res-btn">
+            <i class="fa-solid fa-book-open"></i> Classroom <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+        <a href="https://gemini.google.com">🤖 Gemini AI</a>
+
+        <a href="https://notebooklm.google.com">📄 NotebookLM</a>   
+        
+      </div>
+    </div>
+  </section>
+  <footer class="app-footer"> 
+    <p>Esta app no tiene relación con la Universidad de Managua</p> 
+</footer>
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-theme');
+      body.classList.toggle('light-theme');
+      toggleBtn.textContent = body.classList.contains('dark-theme') ? '🌙' : '☀️';
+    });
+  </script>
+
+</div>
+
+</body>
+</html>
