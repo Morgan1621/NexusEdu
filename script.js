@@ -15,7 +15,7 @@ tabs.forEach(tab =>
         
         tab.classList.add('active');
 
-        // Aquí podrías agregar lógica para ocultar/mostrar contenido si lo deseas
+        // Aquí se puede agregar logica para ocultar o mostrar contenido 
     });
 });
 

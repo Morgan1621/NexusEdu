@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones-UdeM</title>
+    <link rel="stylesheet" href="Ratings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+      <div class="navbar-left">
+       <div class="logo">
+            <img src="https://www.udem.edu.ni/EntornoVirtual/img/udem.png" alt="Logo UdeM">
+        </div>
+       <span class="platform-name">Entorno Virtual UdeM</span>
+        </div>
+        <div class="navbar-right">
+             <button id="theme-toggle" class="theme-btn">🌙</button>
+             <button class="logout-btn">Cerrar Sesión</button>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+
+                            <!-- PERFIL -->
+                        <div class="profile-card">
+                            <h1>JOSSELING LIZBETH GUTIERREZ MARTINEZ</h1>
+                            <p>Carnet: 222402 | Carrera: INGENIERIA EN SISTEMAS</p>
+                        </div>
+
+            <!-- TABS -->
+
+            <nav class="tabs">
+        <button class="tab"
+            onclick="location.href='../Informacion_Personal/infopersonal.html'">
+            <i class="fa-solid fa-user"></i>
+            Información Personal
+        </button>
+
+        <button class="tab"
+            onclick="location.href='../Clases_Actuales/Currentclasses.html'">
+            <i class="fa-solid fa-book"></i>
+            Clases Actuales
+        </button>
+
+        <button class="tab active"
+            onclick="location.href='../Calificaciones/calificaciones.html'">
+            <i class="fa-solid fa-graduation-cap"></i>
+            Calificaciones
+        </button>
+
+        <button class="tab"
+            onclick="location.href='../Auditoria/auditoria.html'">
+            <i class="fa-solid fa-chart-pie"></i>
+            Auditoría
+        </button>
+        </nav>
+        
+                        <!-- CONTENIDO -->
+                            <section class="content">
+                            <h2>Calificaciones</h2>
+                            <p class="subtitle">Historial de rendimiento Cuatrimestral</p>
+
+                            <div class="cards">
+
+
+
+
+
+
+                            </div>
+
+                            
+                        </section>
+
+                    <footer class="app-footer"> 
+                        <p>Esta app no tiene relación con la Universidad de Managua</p> 
+                    </footer>   
+        <script>
+            const toggleBtn = document.getElementById('theme-toggle');
+            const body = document.body;
+
+            toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            body.classList.toggle('light-theme');
+            toggleBtn.textContent = body.classList.contains('dark-theme') ? '🌙' : '☀️';
+            });
+  </script>
+</div>
