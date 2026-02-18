@@ -105,14 +105,14 @@ body.light-theme .navbar
     margin-bottom: 20px;
 }
 
-/* Contenedor de pestañas */
+/* Contenedor de pestañas: ahora ocupa todo el ancho disponible */
 .tabs
  {
     display: flex;
     width: 98%; /* aqui podes mofificar el ancho de la barra de de informacion del estudiante*/
     gap: 10px; /* Espacio entre botones */
     margin-bottom: 25px;
-    background-color: #1a1a1a; /* Fondo oscuro similar a la imagen */
+    background-color: #1a1a1a; /* Fondo oscuro*/
     padding: 10px;
     border-radius: 12px;
 }
